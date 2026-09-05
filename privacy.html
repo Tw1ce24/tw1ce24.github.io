@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung — PAIOS</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 5rem;
+    color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e8e8e8; background: #14171a; } a { color: #7fc4bb; } }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 .3rem; }
+  .sub { color: #666; margin: 0 0 2.5rem; font-size: .95rem; }
+  @media (prefers-color-scheme: dark) { .sub { color: #9aa5ad; } }
+  h2 { font-size: 1.12rem; margin: 2.2rem 0 .6rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: .35rem; }
+  a { color: #1c6b64; }
+  nav { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid #ddd; font-size: .92rem; }
+  @media (prefers-color-scheme: dark) { nav { border-color: #2b3742; } }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+</style>
+</head>
+<body>
+
+<h1>Datenschutzerklärung</h1>
+<p class="sub">für die Anwendung <strong>PAIOS</strong> (Personal AI Operating System) · Stand: 5. September 2026</p>
+
+<h2>1. Verantwortlicher und Zweck der Anwendung</h2>
+<p>PAIOS ist eine private, nicht-kommerzielle Anwendung, die ausschließlich von ihrem Entwickler für dessen eigene Daten genutzt wird. Es gibt keine weiteren Nutzer, keine Registrierung und kein öffentliches Angebot.</p>
+<p>Verantwortlicher: <strong>Henry Huebner</strong>, erreichbar unter <strong>henryhuebner2006@gmail.com</strong>.</p>
+
+<h2>2. Welche Google-Nutzerdaten die Anwendung abruft</h2>
+<p>PAIOS verwendet ausschließlich den Berechtigungsumfang <code>https://www.googleapis.com/auth/calendar.readonly</code>. Damit werden abgerufen:</p>
+<ul>
+  <li>die Liste der Kalender des Kontoinhabers</li>
+  <li>Termine aus den vom Kontoinhaber ausdrücklich ausgewählten Kalendern: Titel, Beschreibung, Ort, Beginn, Ende, Zeitzone, Wiederholungsregeln und Status (z. B. abgesagt)</li>
+</ul>
+<p>Es werden keine weiteren Google-Dienste angebunden. Ein schreibender Zugriff auf den Kalender ist technisch ausgeschlossen, da der erteilte Berechtigungsumfang nur Lesezugriff erlaubt.</p>
+
+<h2>3. Wie diese Daten verwendet werden</h2>
+<p>Die abgerufenen Termine dienen ausschließlich dazu, für den Kontoinhaber selbst eine Tages- und Wochenübersicht sowie Hinweise auf anstehende Fristen zu erzeugen. Die Daten werden nicht ausgewertet, um Profile für Dritte zu bilden, und nicht für Werbung verwendet.</p>
+
+<h2>4. Wo die Daten gespeichert werden</h2>
+<p>Die Daten werden ausschließlich lokal auf dem privaten Rechner des Entwicklers gespeichert:</p>
+<ul>
+  <li>in einer SQLite-Datenbank innerhalb des Projektordners</li>
+  <li>in daraus erzeugten Markdown-Dateien innerhalb eines lokalen Obsidian-Wissensspeichers</li>
+</ul>
+<p>Es existiert kein Server, keine Cloud-Datenbank und kein Hosting-Dienst, an den Kalenderdaten übertragen werden. Die Zugangsdaten (OAuth-Token) liegen ebenfalls ausschließlich lokal und sind von der Versionsverwaltung ausgeschlossen.</p>
+
+<h2>5. Weitergabe an Dritte</h2>
+<p>Es findet <strong>keine</strong> Weitergabe von Google-Nutzerdaten an Dritte statt. Es werden keine Analyse-, Tracking- oder Werbedienste eingesetzt. Die Daten verlassen den Rechner des Entwicklers nicht.</p>
+
+<h2>6. Aufbewahrung und Löschung</h2>
+<p>Abgerufene Termine werden dauerhaft lokal vorgehalten, damit sich der eigene Tagesablauf über längere Zeiträume nachvollziehen lässt. Der Kontoinhaber kann sie jederzeit vollständig löschen, indem er die lokale Datenbankdatei entfernt.</p>
+<p>Der Zugriff der Anwendung lässt sich jederzeit widerrufen unter <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Nach einem Widerruf kann PAIOS keine weiteren Daten abrufen.</p>
+
+<h2>7. Einhaltung der Google-API-Richtlinien</h2>
+<p>Die Nutzung von Informationen aus Google-APIs durch PAIOS erfolgt im Einklang mit der <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, einschließlich der Anforderungen zur eingeschränkten Verwendung (Limited Use).</p>
+
+<h2>8. Änderungen</h2>
+<p>Änderungen an dieser Erklärung werden auf dieser Seite veröffentlicht und mit einem neuen Stand-Datum versehen.</p>
+
+<nav>
+  <a href="./index.html">Startseite</a> &nbsp;·&nbsp; <a href="./terms.html">Nutzungsbedingungen</a>
+</nav>
+
+</body>
+</html>

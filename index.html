@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PAIOS — Personal AI Operating System</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 5rem;
+    color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e8e8e8; background: #14171a; } a { color: #7fc4bb; } }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; }
+  .sub { color: #666; margin: 0 0 2.5rem; }
+  @media (prefers-color-scheme: dark) { .sub { color: #9aa5ad; } }
+  h2 { font-size: 1.15rem; margin: 2.2rem 0 .6rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: .35rem; }
+  a { color: #1c6b64; }
+  nav { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid #ddd; font-size: .92rem; }
+  @media (prefers-color-scheme: dark) { nav { border-color: #2b3742; } }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+</style>
+</head>
+<body>
+
+<h1>PAIOS</h1>
+<p class="sub">Personal AI Operating System — ein privates Werkzeug für eine einzige Person.</p>
+
+<p>PAIOS ist eine selbstgebaute Sammlung von Skripten, die dem Entwickler hilft, sein eigenes Studium, seine Literatur und seinen Alltag zu organisieren. Es ist kein Produkt, keine Dienstleistung und steht keinen weiteren Nutzern zur Verfügung.</p>
+
+<h2>Was es tut</h2>
+<ul>
+  <li>Notizen in einem lokalen <a href="https://obsidian.md">Obsidian</a>-Wissensspeicher sortieren und verschlagworten</li>
+  <li>Literatur in <a href="https://www.zotero.org">Zotero</a> verwalten und mit den Notizen verknüpfen</li>
+  <li>Termine aus Google Calendar <strong>lesen</strong>, um daraus eine Tages- und Wochenübersicht zu erzeugen</li>
+  <li>Fristen im Blick behalten und an anstehende Aufgaben erinnern</li>
+</ul>
+
+<h2>Wie es gebaut ist</h2>
+<p>Python-Skripte, die auf dem privaten Rechner des Entwicklers laufen. Es gibt keinen Server, keine Weboberfläche und keine Nutzerkonten. Alle Daten liegen lokal in einer SQLite-Datenbank und in Markdown-Dateien.</p>
+
+<h2>Google-Zugriff</h2>
+<p>PAIOS greift ausschließlich lesend auf den Google Calendar des Entwicklers zu. Der verwendete Berechtigungsumfang ist <code>calendar.readonly</code> — es können also technisch keine Termine angelegt, verändert oder gelöscht werden.</p>
+
+<nav>
+  <a href="./privacy.html">Datenschutzerklärung</a> &nbsp;·&nbsp; <a href="./terms.html">Nutzungsbedingungen</a>
+</nav>
+
+</body>
+</html>
